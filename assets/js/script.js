@@ -8,12 +8,18 @@ button_image.addEventListener("click", () => {
   }
 });
 
-/* Desafío Parte 2 */
-button = document.querySelector(.button)
-.addEventListener ("click", () => (
-    let sum_ticket =
-    Number (document.querySelector(".sticker_1").value) +
-    Number (document.querySelector(".sticker_2").value) +
-    Number (document.querySelector(".sticker_3").value)
-    if (sum_ticket === 0) (info.InnerHTML = "No has seleccionado ningún ticket") else if (sunm_ticket > 10) (info.InnerHTML = "llevas demasiados Stickers") else (info.InnerHTML = "Llevas $(sum_ticket) Stickers")
-)) 
+/* Desafío Parte 3 */
+let button = document.querySelector("#btn-autorizar");
+button.addEventListener("click", (e) => {
+  let part1 = document.querySelector("#selector").value;
+  let part2 = document.querySelector("#selector-2").value;
+  let part3 = document.querySelector("#selector-3").value;
+  let password = part1 + part2 + part3;
+  if (password == "911") {
+    document.querySelector("#verificar").innerHTML = "password 1 es correcto";
+  } else if (password == "714") {
+    document.querySelector("#verificar").innerHTML = "Password 2 es correcto";
+  } else {
+    document.querySelector("#verificar").innerHTML = "Password  es Incorrecto";
+  }
+});
