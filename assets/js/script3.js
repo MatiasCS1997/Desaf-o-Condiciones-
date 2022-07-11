@@ -1,5 +1,5 @@
 /* Desafío Parte 3 */
-let button = document.querySelector("#btn-autorizar");
+let button = document.querySelector("#btn-verificar");
 button.addEventListener("click", (e) => {
   let part1 = document.querySelector("#number_id1").value;
   let part2 = document.querySelector("#number_id2").value;
